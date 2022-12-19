@@ -1,17 +1,18 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
-float f(float x , float &fx)
+double f(double x , double &fx)
 {
     fx = x * x * cos(x) + 1;
     return fx;
 }
 
 int main() {
-float a=0,b=0,fx=0,x=0,err=2;
-
+double a=0,b=0,fx=0,x=0,err=2;
+int g=0;
 while(f(a,fx)*f(b,fx)>=0) {
-    cout <<"inserire estremi"<<endl;
+    cout <<"inserire estremi";
     cin >> a >> b;
 
     if (f(a,fx)*f(b,fx) < 0){
@@ -31,8 +32,10 @@ while (f(x,fx)!=0) {
         if (err < 1e-6){
             break;}
 }
-cout.precision(4);
-cout << x<<endl;
+
+cout <<   setprecision(5)<< x;
+
+
 
 
 return 0;
@@ -40,4 +43,3 @@ return 0;
 
 
 }
-
