@@ -33,7 +33,7 @@ while (f(x,fx)!=0) {
             break;}
 }
 
-cout <<   setprecision(6)<< x;
+cout << fixed<<  setprecision(4)<< x;
 
 
 
