@@ -33,7 +33,7 @@ while (f(x,fx)!=0) {
 }
 cout.precision(4);
 cout << x<<endl;
-cout << f(x,fx)<<endl;
+
 
 return 0;
 
