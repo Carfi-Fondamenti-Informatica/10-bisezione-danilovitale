@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <iomanip>
 using namespace std;
 double f(double x , double &fx)
 {
@@ -33,7 +32,10 @@ while (f(x,fx)!=0) {
             break;}
 }
 
-cout << fixed<<  setprecision(4)<< x;
+x=x*10000;
+x=(int)x;
+x=x/10000;
+cout<< x;
 
 
 
@@ -43,3 +45,6 @@ return 0;
 
 
 }
+
+
+
