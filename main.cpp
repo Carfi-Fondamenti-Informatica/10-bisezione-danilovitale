@@ -11,7 +11,7 @@ int main() {
 float a=0,b=0,fx=0,x=0,err=2;
 
 while(f(a,fx)*f(b,fx)>=0) {
-    cout <<"inserire estremi";
+    cout <<"inserire estremi"<<endl;
     cin >> a >> b;
 
     if (f(a,fx)*f(b,fx) < 0){
