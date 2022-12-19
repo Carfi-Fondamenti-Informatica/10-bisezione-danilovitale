@@ -32,8 +32,6 @@ while (f(x,fx)!=0) {
 }
 cout.precision(4);
 cout << x<<endl;
-cout.precision(4);
-cout << f(x,fx);
 
 
 return 0;
