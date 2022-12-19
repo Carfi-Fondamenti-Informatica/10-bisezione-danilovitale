@@ -3,7 +3,8 @@
 using namespace std;
 float f(float x , float &fx)
 {
-    return fx = x * x * cos(x) + 1;
+    fx = x * x * cos(x) + 1;
+    return fx;
 }
 
 int main() {
@@ -32,7 +33,7 @@ while (f(x,fx)!=0) {
 }
 cout.precision(4);
 cout << x<<endl;
-
+cout << f(x,fx)<<endl;
 
 return 0;
 
